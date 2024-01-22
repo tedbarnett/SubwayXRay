@@ -7,96 +7,192 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FB483D42B21AD27005ABEF2 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 5FB483D32B21AD27005ABEF2 /* RealityKitContent */; };
-		5FB483D62B21AD27005ABEF2 /* SubwayXRayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB483D52B21AD27005ABEF2 /* SubwayXRayApp.swift */; };
-		5FB483D82B21AD27005ABEF2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB483D72B21AD27005ABEF2 /* ContentView.swift */; };
-		5FB483DA2B21AD27005ABEF2 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB483D92B21AD27005ABEF2 /* ImmersiveView.swift */; };
-		5FB483DC2B21AD28005ABEF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB483DB2B21AD28005ABEF2 /* Assets.xcassets */; };
-		5FB483DF2B21AD28005ABEF2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FB483DE2B21AD28005ABEF2 /* Preview Assets.xcassets */; };
-		5FB483E82B21EA97005ABEF2 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB483E72B21EA97005ABEF2 /* LocationManager.swift */; };
+		5F1C35592B4D8868000C4205 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 5F1C35582B4D8868000C4205 /* FirebaseAnalyticsSwift */; };
+		5F1C355B2B4D8868000C4205 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 5F1C355A2B4D8868000C4205 /* FirebaseAuth */; };
+		5F1C355D2B4D8868000C4205 /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5F1C355C2B4D8868000C4205 /* FirebaseAuthCombine-Community */; };
+		5F1C355F2B4D8868000C4205 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 5F1C355E2B4D8868000C4205 /* FirebaseFunctions */; };
+		5F1C35612B4D8868000C4205 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 5F1C35602B4D8868000C4205 /* FirebaseFunctionsCombine-Community */; };
+		5F36D4912B39A4B5006CAC22 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D4902B39A4B5006CAC22 /* LocationManager.swift */; };
+		5F36D4962B39A519006CAC22 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D4922B39A519006CAC22 /* SQLTable.swift */; };
+		5F36D4972B39A519006CAC22 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D4932B39A519006CAC22 /* SQLiteDB.swift */; };
+		5F36D4982B39A519006CAC22 /* CloudDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D4942B39A519006CAC22 /* CloudDB.swift */; };
+		5F36D4992B39A519006CAC22 /* SQLiteBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D4952B39A519006CAC22 /* SQLiteBase.swift */; };
+		5F36D49C2B39B611006CAC22 /* StopRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F36D49B2B39B611006CAC22 /* StopRoute.swift */; };
+		5F4F467A2B4D466E00A5EB0D /* CloudFunctionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4F46792B4D466E00A5EB0D /* CloudFunctionManager.swift */; };
+		5F723D3D2B39636C004D0A24 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 5F723D3C2B39636C004D0A24 /* RealityKitContent */; };
+		5F723D3F2B39636C004D0A24 /* SubwayXRayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D3E2B39636C004D0A24 /* SubwayXRayApp.swift */; };
+		5F723D412B39636C004D0A24 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D402B39636C004D0A24 /* ContentView.swift */; };
+		5F723D432B39636C004D0A24 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D422B39636C004D0A24 /* ImmersiveView.swift */; };
+		5F723D452B39636D004D0A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D442B39636D004D0A24 /* Assets.xcassets */; };
+		5F723D482B39636D004D0A24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D472B39636D004D0A24 /* Preview Assets.xcassets */; };
+		5F723D522B3963AE004D0A24 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D512B3963AE004D0A24 /* data.db */; };
+		5F723D5D2B3963EB004D0A24 /* SQLiteDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */; };
+		5F723D602B396403004D0A24 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */; };
+		5F8F3EF92B501A7800981727 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 5F8F3EF82B501A7800981727 /* SwiftProtobuf */; };
+		5F8F3EFB2B501B0000981727 /* gtfs_realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */; };
+		5F9803332B51039200DF3216 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F9803322B51039200DF3216 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5FB483CE2B21AD27005ABEF2 /* SubwayXRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubwayXRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5FB483D22B21AD27005ABEF2 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
-		5FB483D52B21AD27005ABEF2 /* SubwayXRayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayXRayApp.swift; sourceTree = "<group>"; };
-		5FB483D72B21AD27005ABEF2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5FB483D92B21AD27005ABEF2 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
-		5FB483DB2B21AD28005ABEF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5FB483DE2B21AD28005ABEF2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5FB483E02B21AD28005ABEF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5FB483E72B21EA97005ABEF2 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5F36D48F2B396545006CAC22 /* SubwayXRay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SubwayXRay-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F36D4902B39A4B5006CAC22 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5F36D4922B39A519006CAC22 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
+		5F36D4932B39A519006CAC22 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
+		5F36D4942B39A519006CAC22 /* CloudDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDB.swift; sourceTree = "<group>"; };
+		5F36D4952B39A519006CAC22 /* SQLiteBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteBase.swift; sourceTree = "<group>"; };
+		5F36D49B2B39B611006CAC22 /* StopRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopRoute.swift; sourceTree = "<group>"; };
+		5F4F46792B4D466E00A5EB0D /* CloudFunctionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudFunctionManager.swift; sourceTree = "<group>"; };
+		5F723D372B39636C004D0A24 /* SubwayXRay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SubwayXRay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F723D3B2B39636C004D0A24 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
+		5F723D3E2B39636C004D0A24 /* SubwayXRayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubwayXRayApp.swift; sourceTree = "<group>"; };
+		5F723D402B39636C004D0A24 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5F723D422B39636C004D0A24 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		5F723D442B39636D004D0A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F723D472B39636D004D0A24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5F723D492B39636D004D0A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F723D512B3963AE004D0A24 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
+		5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabaseManager.swift; sourceTree = "<group>"; };
+		5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gtfs_realtime.pb.swift; sourceTree = "<group>"; };
+		5F9803322B51039200DF3216 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5FB483CB2B21AD27005ABEF2 /* Frameworks */ = {
+		5F723D342B39636C004D0A24 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB483D42B21AD27005ABEF2 /* RealityKitContent in Frameworks */,
+				5F1C35612B4D8868000C4205 /* FirebaseFunctionsCombine-Community in Frameworks */,
+				5F1C35592B4D8868000C4205 /* FirebaseAnalyticsSwift in Frameworks */,
+				5F723D602B396403004D0A24 /* libsqlite3.0.tbd in Frameworks */,
+				5F8F3EF92B501A7800981727 /* SwiftProtobuf in Frameworks */,
+				5F723D3D2B39636C004D0A24 /* RealityKitContent in Frameworks */,
+				5F1C355F2B4D8868000C4205 /* FirebaseFunctions in Frameworks */,
+				5F1C355B2B4D8868000C4205 /* FirebaseAuth in Frameworks */,
+				5F1C355D2B4D8868000C4205 /* FirebaseAuthCombine-Community in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5FB483C52B21AD27005ABEF2 = {
+		5F36D4892B396460006CAC22 /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				5FB483D02B21AD27005ABEF2 /* SubwayXRay */,
-				5FB483D12B21AD27005ABEF2 /* Packages */,
-				5FB483CF2B21AD27005ABEF2 /* Products */,
+				5F723D512B3963AE004D0A24 /* data.db */,
+				5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */,
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		5F36D49A2B39B600006CAC22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5F36D49B2B39B611006CAC22 /* StopRoute.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5F4F46782B4D465600A5EB0D /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				5F4F46792B4D466E00A5EB0D /* CloudFunctionManager.swift */,
+				5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		5F723D2E2B39636C004D0A24 = {
+			isa = PBXGroup;
+			children = (
+				5F723D392B39636C004D0A24 /* SubwayXRay */,
+				5F723D3A2B39636C004D0A24 /* Packages */,
+				5F723D382B39636C004D0A24 /* Products */,
+				5F723D5E2B396403004D0A24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5FB483CF2B21AD27005ABEF2 /* Products */ = {
+		5F723D382B39636C004D0A24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5FB483CE2B21AD27005ABEF2 /* SubwayXRay.app */,
+				5F723D372B39636C004D0A24 /* SubwayXRay.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5FB483D02B21AD27005ABEF2 /* SubwayXRay */ = {
+		5F723D392B39636C004D0A24 /* SubwayXRay */ = {
 			isa = PBXGroup;
 			children = (
-				5FB483D52B21AD27005ABEF2 /* SubwayXRayApp.swift */,
-				5FB483D72B21AD27005ABEF2 /* ContentView.swift */,
-				5FB483E72B21EA97005ABEF2 /* LocationManager.swift */,
-				5FB483D92B21AD27005ABEF2 /* ImmersiveView.swift */,
-				5FB483DB2B21AD28005ABEF2 /* Assets.xcassets */,
-				5FB483E02B21AD28005ABEF2 /* Info.plist */,
-				5FB483DD2B21AD28005ABEF2 /* Preview Content */,
+				5F723D3E2B39636C004D0A24 /* SubwayXRayApp.swift */,
+				5F723D402B39636C004D0A24 /* ContentView.swift */,
+				5F723D422B39636C004D0A24 /* ImmersiveView.swift */,
+				5F36D49A2B39B600006CAC22 /* Models */,
+				5F36D4892B396460006CAC22 /* DB */,
+				5F723D502B39638F004D0A24 /* SQLiteDB-Swift */,
+				5F723D4F2B396383004D0A24 /* Location Manager */,
+				5F4F46782B4D465600A5EB0D /* Firebase */,
+				5F723D442B39636D004D0A24 /* Assets.xcassets */,
+				5F36D48F2B396545006CAC22 /* SubwayXRay-Bridging-Header.h */,
+				5F723D492B39636D004D0A24 /* Info.plist */,
+				5F9803322B51039200DF3216 /* GoogleService-Info.plist */,
+				5F723D462B39636D004D0A24 /* Preview Content */,
 			);
 			path = SubwayXRay;
 			sourceTree = "<group>";
 		};
-		5FB483D12B21AD27005ABEF2 /* Packages */ = {
+		5F723D3A2B39636C004D0A24 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				5FB483D22B21AD27005ABEF2 /* RealityKitContent */,
+				5F723D3B2B39636C004D0A24 /* RealityKitContent */,
 			);
 			path = Packages;
 			sourceTree = "<group>";
 		};
-		5FB483DD2B21AD28005ABEF2 /* Preview Content */ = {
+		5F723D462B39636D004D0A24 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5FB483DE2B21AD28005ABEF2 /* Preview Assets.xcassets */,
+				5F723D472B39636D004D0A24 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5F723D4F2B396383004D0A24 /* Location Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5F36D4902B39A4B5006CAC22 /* LocationManager.swift */,
+			);
+			path = "Location Manager";
+			sourceTree = "<group>";
+		};
+		5F723D502B39638F004D0A24 /* SQLiteDB-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				5F36D4942B39A519006CAC22 /* CloudDB.swift */,
+				5F36D4952B39A519006CAC22 /* SQLiteBase.swift */,
+				5F36D4932B39A519006CAC22 /* SQLiteDB.swift */,
+				5F36D4922B39A519006CAC22 /* SQLTable.swift */,
+			);
+			path = "SQLiteDB-Swift";
+			sourceTree = "<group>";
+		};
+		5F723D5E2B396403004D0A24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5FB483CD2B21AD27005ABEF2 /* SubwayXRay */ = {
+		5F723D362B39636C004D0A24 /* SubwayXRay */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5FB483E32B21AD28005ABEF2 /* Build configuration list for PBXNativeTarget "SubwayXRay" */;
+			buildConfigurationList = 5F723D4C2B39636D004D0A24 /* Build configuration list for PBXNativeTarget "SubwayXRay" */;
 			buildPhases = (
-				5FB483CA2B21AD27005ABEF2 /* Sources */,
-				5FB483CB2B21AD27005ABEF2 /* Frameworks */,
-				5FB483CC2B21AD27005ABEF2 /* Resources */,
+				5F723D332B39636C004D0A24 /* Sources */,
+				5F723D342B39636C004D0A24 /* Frameworks */,
+				5F723D352B39636C004D0A24 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -104,28 +200,34 @@
 			);
 			name = SubwayXRay;
 			packageProductDependencies = (
-				5FB483D32B21AD27005ABEF2 /* RealityKitContent */,
+				5F723D3C2B39636C004D0A24 /* RealityKitContent */,
+				5F1C35582B4D8868000C4205 /* FirebaseAnalyticsSwift */,
+				5F1C355A2B4D8868000C4205 /* FirebaseAuth */,
+				5F1C355C2B4D8868000C4205 /* FirebaseAuthCombine-Community */,
+				5F1C355E2B4D8868000C4205 /* FirebaseFunctions */,
+				5F1C35602B4D8868000C4205 /* FirebaseFunctionsCombine-Community */,
+				5F8F3EF82B501A7800981727 /* SwiftProtobuf */,
 			);
 			productName = SubwayXRay;
-			productReference = 5FB483CE2B21AD27005ABEF2 /* SubwayXRay.app */;
+			productReference = 5F723D372B39636C004D0A24 /* SubwayXRay.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5FB483C62B21AD27005ABEF2 /* Project object */ = {
+		5F723D2F2B39636C004D0A24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
-				LastUpgradeCheck = 1510;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					5FB483CD2B21AD27005ABEF2 = {
-						CreatedOnToolsVersion = 15.1;
+					5F723D362B39636C004D0A24 = {
+						CreatedOnToolsVersion = 15.2;
 					};
 				};
 			};
-			buildConfigurationList = 5FB483C92B21AD27005ABEF2 /* Build configuration list for PBXProject "SubwayXRay" */;
+			buildConfigurationList = 5F723D322B39636C004D0A24 /* Build configuration list for PBXProject "SubwayXRay" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -133,44 +235,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 5FB483C52B21AD27005ABEF2;
-			productRefGroup = 5FB483CF2B21AD27005ABEF2 /* Products */;
+			mainGroup = 5F723D2E2B39636C004D0A24;
+			packageReferences = (
+				5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				5F8F3EF72B501A7800981727 /* XCRemoteSwiftPackageReference "swift-protobuf" */,
+			);
+			productRefGroup = 5F723D382B39636C004D0A24 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5FB483CD2B21AD27005ABEF2 /* SubwayXRay */,
+				5F723D362B39636C004D0A24 /* SubwayXRay */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5FB483CC2B21AD27005ABEF2 /* Resources */ = {
+		5F723D352B39636C004D0A24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB483DF2B21AD28005ABEF2 /* Preview Assets.xcassets in Resources */,
-				5FB483DC2B21AD28005ABEF2 /* Assets.xcassets in Resources */,
+				5F723D522B3963AE004D0A24 /* data.db in Resources */,
+				5F9803332B51039200DF3216 /* GoogleService-Info.plist in Resources */,
+				5F723D482B39636D004D0A24 /* Preview Assets.xcassets in Resources */,
+				5F723D452B39636D004D0A24 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5FB483CA2B21AD27005ABEF2 /* Sources */ = {
+		5F723D332B39636C004D0A24 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FB483E82B21EA97005ABEF2 /* LocationManager.swift in Sources */,
-				5FB483D82B21AD27005ABEF2 /* ContentView.swift in Sources */,
-				5FB483D62B21AD27005ABEF2 /* SubwayXRayApp.swift in Sources */,
-				5FB483DA2B21AD27005ABEF2 /* ImmersiveView.swift in Sources */,
+				5F723D5D2B3963EB004D0A24 /* SQLiteDatabaseManager.swift in Sources */,
+				5F36D49C2B39B611006CAC22 /* StopRoute.swift in Sources */,
+				5F723D412B39636C004D0A24 /* ContentView.swift in Sources */,
+				5F8F3EFB2B501B0000981727 /* gtfs_realtime.pb.swift in Sources */,
+				5F723D3F2B39636C004D0A24 /* SubwayXRayApp.swift in Sources */,
+				5F723D432B39636C004D0A24 /* ImmersiveView.swift in Sources */,
+				5F36D4992B39A519006CAC22 /* SQLiteBase.swift in Sources */,
+				5F36D4912B39A4B5006CAC22 /* LocationManager.swift in Sources */,
+				5F36D4982B39A519006CAC22 /* CloudDB.swift in Sources */,
+				5F36D4962B39A519006CAC22 /* SQLTable.swift in Sources */,
+				5F36D4972B39A519006CAC22 /* SQLiteDB.swift in Sources */,
+				5F4F467A2B4D466E00A5EB0D /* CloudFunctionManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		5FB483E12B21AD28005ABEF2 /* Debug */ = {
+		5F723D4A2B39636D004D0A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -233,7 +349,7 @@
 			};
 			name = Debug;
 		};
-		5FB483E22B21AD28005ABEF2 /* Release */ = {
+		5F723D4B2B39636D004D0A24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -289,14 +405,15 @@
 			};
 			name = Release;
 		};
-		5FB483E42B21AD28005ABEF2 /* Debug */ = {
+		5F723D4D2B39636D004D0A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SubwayXRay/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -306,23 +423,26 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com..SubwayXRay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SubwayXRay.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SubwayXRay/SubwayXRay-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
-		5FB483E52B21AD28005ABEF2 /* Release */ = {
+		5F723D4E2B39636D004D0A24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SubwayXRay/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
@@ -332,10 +452,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com..SubwayXRay;
+				PRODUCT_BUNDLE_IDENTIFIER = com.SubwayXRay.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SubwayXRay/SubwayXRay-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
@@ -344,32 +466,81 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5FB483C92B21AD27005ABEF2 /* Build configuration list for PBXProject "SubwayXRay" */ = {
+		5F723D322B39636C004D0A24 /* Build configuration list for PBXProject "SubwayXRay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FB483E12B21AD28005ABEF2 /* Debug */,
-				5FB483E22B21AD28005ABEF2 /* Release */,
+				5F723D4A2B39636D004D0A24 /* Debug */,
+				5F723D4B2B39636D004D0A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5FB483E32B21AD28005ABEF2 /* Build configuration list for PBXNativeTarget "SubwayXRay" */ = {
+		5F723D4C2B39636D004D0A24 /* Build configuration list for PBXNativeTarget "SubwayXRay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5FB483E42B21AD28005ABEF2 /* Debug */,
-				5FB483E52B21AD28005ABEF2 /* Release */,
+				5F723D4D2B39636D004D0A24 /* Debug */,
+				5F723D4E2B39636D004D0A24 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.19.1;
+			};
+		};
+		5F8F3EF72B501A7800981727 /* XCRemoteSwiftPackageReference "swift-protobuf" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-protobuf.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.25.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		5FB483D32B21AD27005ABEF2 /* RealityKitContent */ = {
+		5F1C35582B4D8868000C4205 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		5F1C355A2B4D8868000C4205 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		5F1C355C2B4D8868000C4205 /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		5F1C355E2B4D8868000C4205 /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		5F1C35602B4D8868000C4205 /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		5F723D3C2B39636C004D0A24 /* RealityKitContent */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = RealityKitContent;
 		};
+		5F8F3EF82B501A7800981727 /* SwiftProtobuf */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5F8F3EF72B501A7800981727 /* XCRemoteSwiftPackageReference "swift-protobuf" */;
+			productName = SwiftProtobuf;
+		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5FB483C62B21AD27005ABEF2 /* Project object */;
+	rootObject = 5F723D2F2B39636C004D0A24 /* Project object */;
 }

@@ -12,8 +12,7 @@ final class LocationManager: NSObject, ObservableObject {
     private let locationManager = CLLocationManager()
     
     @Published var region = MKCoordinateRegion()
-    
-    
+        
     override init() {
         super.init()
         
@@ -50,9 +49,10 @@ extension LocationManager: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         locationManager.stopUpdatingLocation()
         locations.last.map {
+            //region = MKCoordinateRegion(center: $0.coordinate, latitudinalMeters: 5000, longitudinalMeters: 5000)
             region = MKCoordinateRegion(
                 center: $0.coordinate,
-                span: .init(latitudeDelta: 0.01, longitudeDelta: 0.01)
+                span: .init(latitudeDelta: 1.800, longitudeDelta: 1.800)
             )
         }
     }
