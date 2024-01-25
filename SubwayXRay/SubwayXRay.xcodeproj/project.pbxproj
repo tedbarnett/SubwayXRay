@@ -25,12 +25,12 @@
 		5F723D432B39636C004D0A24 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D422B39636C004D0A24 /* ImmersiveView.swift */; };
 		5F723D452B39636D004D0A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D442B39636D004D0A24 /* Assets.xcassets */; };
 		5F723D482B39636D004D0A24 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D472B39636D004D0A24 /* Preview Assets.xcassets */; };
-		5F723D522B3963AE004D0A24 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5F723D512B3963AE004D0A24 /* data.db */; };
 		5F723D5D2B3963EB004D0A24 /* SQLiteDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */; };
 		5F723D602B396403004D0A24 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */; };
 		5F8F3EF92B501A7800981727 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 5F8F3EF82B501A7800981727 /* SwiftProtobuf */; };
 		5F8F3EFB2B501B0000981727 /* gtfs_realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */; };
 		5F9803332B51039200DF3216 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F9803322B51039200DF3216 /* GoogleService-Info.plist */; };
+		5FE30EF62B6232420083E937 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5FE30EF52B6232420083E937 /* data.db */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,11 +50,11 @@
 		5F723D442B39636D004D0A24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F723D472B39636D004D0A24 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5F723D492B39636D004D0A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5F723D512B3963AE004D0A24 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 		5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDatabaseManager.swift; sourceTree = "<group>"; };
 		5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gtfs_realtime.pb.swift; sourceTree = "<group>"; };
 		5F9803322B51039200DF3216 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FE30EF52B6232420083E937 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 		5F36D4892B396460006CAC22 /* DB */ = {
 			isa = PBXGroup;
 			children = (
-				5F723D512B3963AE004D0A24 /* data.db */,
+				5FE30EF52B6232420083E937 /* data.db */,
 				5F723D5B2B3963EB004D0A24 /* SQLiteDatabaseManager.swift */,
 			);
 			path = DB;
@@ -254,8 +254,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F723D522B3963AE004D0A24 /* data.db in Resources */,
 				5F9803332B51039200DF3216 /* GoogleService-Info.plist in Resources */,
+				5FE30EF62B6232420083E937 /* data.db in Resources */,
 				5F723D482B39636D004D0A24 /* Preview Assets.xcassets in Resources */,
 				5F723D452B39636D004D0A24 /* Assets.xcassets in Resources */,
 			);
