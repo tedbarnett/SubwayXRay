@@ -12,7 +12,11 @@ import MapKit
 
 struct ContentView: View {
     
-    @State private var cameraPosition: MapCameraPosition = .userLocation(fallback: .automatic)
+    //@State private var cameraPosition: MapCameraPosition = .userLocation(fallback: .automatic)
+    
+    let tedLocation = CLLocationCoordinate2D(latitude: 40.73566941586783, longitude: -74.00517632403478)
+    @State private var cameraPosition: MapCameraPosition = .automatic
+    
     @StateObject var locationManager = LocationManager()
     @State var cloudFunctionManager = CloudFunctionManager()
     @State private var stopRouteACE = [StopRoute]()
@@ -22,6 +26,9 @@ struct ContentView: View {
     
     var body: some View {
         Map(position: $cameraPosition) {
+            
+            Marker("Ted's Location", systemImage: "person.circle.fill", coordinate: tedLocation)
+                .tint(.blue)
             
             //For ACE
             let coordinates = stopRouteACE.map { CLLocationCoordinate2D(latitude: $0.stop_lat, longitude: $0.stop_lon) }
@@ -63,17 +70,28 @@ struct ContentView: View {
                 .annotationTitles(.visible)
             }
         }
+        .safeAreaInset(edge: .trailing, content: {
+            VStack{
+                Button {
+                    cameraPosition = .region(MKCoordinateRegion(center: tedLocation, latitudinalMeters: 500, longitudinalMeters: 500))
+                } label: {
+                    Image(systemName: "paperplane")
+                }
+                Spacer()
+            }
+        })
         .safeAreaPadding(.all)
         .mapStyle(.standard)
         .preferredColorScheme(.light)
         .mapControls {
-            MapUserLocationButton()
+            //MapUserLocationButton()
             MapCompass()
             MapPitchToggle()
             MapScaleView()
         }
         .onAppear {
-            cameraPosition = .region(locationManager.region)
+            cameraPosition = .region(MKCoordinateRegion(center: tedLocation, latitudinalMeters: 500, longitudinalMeters: 500))
+            //cameraPosition = .region(locationManager.region)
             self.stopRouteACE = SQLiteDatabaseManager().getAllACEStopes()
             self.stopRouteFor1 = SQLiteDatabaseManager().getAll1Stopes()
             
