@@ -24,7 +24,7 @@ struct ContentView: View {
     @State var aceData: [TransitRealtime_FeedEntity]?
     @AppStorage("apiKey") var apiKey = "mI2cquz12l3pD4XDomPFR6Evd0Y1aiGQ6pBnpKHx"
     
-    var body: some View {
+    /*var body: some View {
         Map(position: $cameraPosition) {
             
             Marker("Ted's Location", systemImage: "person.circle.fill", coordinate: tedLocation)
@@ -97,7 +97,7 @@ struct ContentView: View {
             
             print(self.stopRouteACE[0])
             //self.cloudFunctionManager.getGTFSACE()
-            self.serviceACEPull()
+            //self.serviceACEPull()
             /*Task {
                 do {
                     try await self.cloudFunctionManager.getGTFSACE()
@@ -109,6 +109,20 @@ struct ContentView: View {
         }
         .onMapCameraChange {
             print("")
+        }
+    }*/
+    
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 16) {
+                ForEach(stopRouteACE) { stop in
+                    StopView(stop: stop)
+                }
+            }
+            .padding()
+        }
+        .onAppear {
+            self.stopRouteACE = SQLiteDatabaseManager().getAllACEStopes()
         }
     }
     

